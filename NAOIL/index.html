@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Naoil</title>
+</head>
+<body>
+    <header>
+        <h3>Naoil</h3>
+        <nav>
+            <ul>
+                <li>
+                    <a href="mapage.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="mapage.html">A propos</a>
+                </li>
+                <li>
+                    <a href="">Photos</a>
+                </li>
+            </ul>
+        </nav>
+        <button>Connectez-vous</button>
+    </header>
+    <main>
+        <!-- -------section hero Accueil----- -->
+<section id="hero">
+    <div class="gauche">
+        <h1>Bienvenue sur Modern</h1>
+        <p>
+            Bienvenue dans ma galerie de photos ! 
+            Je suis passionné par la photographie et j'aime capturer des moments uniques. 
+            Ici, vous trouverez une sélection de mes meilleures photos, 
+            allant de paysages à des portraits.
+        </p>
+        <button>Apprendre plus</button>
+    </div>
+    <div class="droite">
+        <img src="/img/IMG-20240916-WA0007-removebg-preview.png">
+        <div class="effet">
+            <div class="cercle"></div>
+            <div class="cercle"></div>
+            <div class="cercle"></div>
+            <div class="cercle"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ------------section service------- -->
+
+<!-- ------------section images------------ -->
+
+<section id="images">
+    <h2>Images</h2>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="/img/IMG-20240916-WA0004.jpg" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/IMG-20240916-WA0003.jpg" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/IMG-20240916-WA0008.jpg" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/IMG-20240916-WA0009.jpg" alt="Image 4">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/IMG-20240916-WA0010.jpg" alt="Image 5">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/WhatsApp Image 2024-09-16 à 13.55.19_893b6d18.jpg" alt="Image 5">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/IMG-20240916-WA0005.jpg" alt="Image 5">
+            </div>
+        </div>
+    </div>
+    <div class="dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+     <!-- Modale -->
+     <div id="modal" class="modal" onclick="closeModal()">
+        <img id="modal-image" src="/img/IMG-20240624-WA0004.jpg" alt="Image">
+        <img id="modal-image" src="/img/IMG-20240916-WA0003.jpg" alt="Image">
+        <img id="modal-image" src="/img/IMG-20240916-WA0004.jpg" alt="Image">
+        <img id="modal-image" src="/img/IMG-20240916-WA0005.jpg" alt="Image">
+        <img id="modal-image" src="/img/IMG-20240916-WA0006.jpg" alt="Image">
+        <img id="modal-image" src="/img/IMG-20240916-WA0008.jpg" alt="Image">
+        <img id="modal-image" src="/img/IMG-20240916-WA0009.jpg" alt="Image">
+        <img id="modal-image" src="/img/IMG-20240916-WA0010.jpg" alt="Image">
+        <img id="modal-image" src="/img/IMG-20240916-WA0011.jpg" alt="Image">
+        <img id="modal-image" src="/img/WhatsApp Image 2024-09-16 à 13.55.19_893b6d18.jpg" alt="Image">
+    </div>
+</section>
+
+<!-- ---------section contact------- -->
+
+<section id="contact">
+    <div class="partie1">
+        <h2>Qui suis-je ?</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Sint sequi doloribus ipsa consectetur corrupti nobis 
+             debitis quaerat, 
+             reiciendis error ipsum repellat cumque, nulla, 
+             ipsam vero tempore beatae.
+             Quod libero quidem modi veniam exercitationem totam, 
+             eligendi, 
+             odit magni odio est delectus voluptatum. 
+             Dolore mollitia rerum necessitatibus libero porro 
+             cupiditate, sit laboriosam!
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur 
+            adipisicing elit. Quam iusto nemo labore 
+            ullam esse possimus similique molestias 
+            magnam, saepe ad!
+        </p>
+    </div>
+    <div class="partie2">
+        <h2>comentaire</h2>
+        <form action="">
+            <input type="text" placeholder="votre nom">
+            <input type="email" placeholder="votre adresse mail">
+            <textarea name="message" placeholder="votre message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</section>
+
+<!-- --------pied de page------- -->
+ <footer>
+    <p>
+    @modern, tout droit reservé 2024
+    </p>
+ </footer>
+
+<!-- -----------Medias sociaux liens---------- -->
+ <div class="reseau">
+    <div class="carte">
+        <i class="fa-brands fa-facebook-f"></i>
+    </div>
+    <div class="carte">
+        <i class="fa-brands fa-x-twitter"></i>
+    </div>
+    <div class="carte">
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+ </div>
+
+    </main>
+
+    <script src="main.js"></script>
+   
+</body>
+</html>
